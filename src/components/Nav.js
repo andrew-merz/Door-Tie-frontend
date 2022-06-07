@@ -4,7 +4,13 @@ function Nav(props) {
   return (
     <nav className="nav">
       <Link to="/">
-        <div>Roomates App</div>
+        <div>Home</div>
+      </Link>
+      <Link to="/pages/Roomates">
+        <div>Roomates</div>
+      </Link>
+      <Link to="/pages/Edit">
+        <div>Edit</div>
       </Link>
     </nav>
   );
