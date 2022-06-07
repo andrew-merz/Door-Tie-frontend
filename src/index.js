@@ -5,6 +5,7 @@ import App from "./App";
 import Roomates from "./pages/Roomates";
 import Edit from "./pages/Edit";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,6 +16,7 @@ root.render(
       <Route path="/pages/Roomates" element={<Roomates />}></Route>
       <Route path="/pages/Edit" element={<Edit />}></Route>
       <Route path="/pages/Register" element={<Register />}></Route>
+      <Route path="/pages/Login" element={<Login />}></Route>
     </Routes>
   </Router>
 );
