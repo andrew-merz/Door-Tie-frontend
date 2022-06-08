@@ -16,6 +16,12 @@ function Nav(props) {
           <Link to="/pages/Edit">
             <div>Edit</div>
           </Link>
+          <Link to="/pages/Register">
+            <div>Register</div>
+          </Link>
+          <Link to="/pages/Login">
+            <div>Login</div>
+          </Link>
         </Toolbar>
       </nav>
     </AppBar>
