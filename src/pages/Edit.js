@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-
+import React from "react";
 function Edit() {
   return (
     <div className="roomates">

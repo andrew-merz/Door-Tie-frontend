@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 import Nav from "../components/Nav";
 
 function Login() {
@@ -22,7 +23,7 @@ function Login() {
 
     if (data.user) {
       alert("login successful");
-      window.location.href = "../";
+      window.location.href = "/pages/Dashboard";
     } else {
       alert("please check username and password");
     }

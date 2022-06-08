@@ -1,7 +1,10 @@
 import { useState } from "react";
+import React from "react";
 import Nav from "../components/Nav";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
   const [username, setUsename] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +24,9 @@ function Register() {
       }),
     });
     const data = await response.json();
-    console.log(data);
+    if (data.status === "ok") {
+      navigate("/pages/Login");
+    }
   }
 
   return (
