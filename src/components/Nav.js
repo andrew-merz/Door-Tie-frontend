@@ -19,8 +19,8 @@ function Nav(props) {
             <Button href="/pages/Dashboard">
               <div>Dashboard</div>
             </Button>
-            <Button href="/pages/Roomates">
-              <div>Roomates</div>
+            <Button href="/pages/Roommates">
+              <div>Roommates</div>
             </Button>
             <Button href="/pages/Edit">
               <div>Edit</div>

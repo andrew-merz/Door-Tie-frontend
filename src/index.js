@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Roomates from "./pages/Roomates";
+import Roommates from "./pages/Roommates";
 import Edit from "./pages/Edit";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -14,7 +14,7 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />}></Route>
-      <Route path="/pages/Roomates" element={<Roomates />}></Route>
+      <Route path="/pages/Roommates" element={<Roommates />}></Route>
       <Route path="/pages/Edit" element={<Edit />}></Route>
       <Route path="/pages/Register" element={<Register />}></Route>
       <Route path="/pages/Login" element={<Login />}></Route>
