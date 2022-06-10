@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 //import "../nav.css";
 import React from "react";
 import AppBar from "@mui/material/AppBar";
@@ -7,6 +6,11 @@ import Button from "@mui/material/Button";
 import { ButtonGroup } from "@mui/material";
 
 function Nav(props) {
+  // function logout() {
+  //   setUser(null);
+  //   localStorage.clear();
+  // }
+
   return (
     <AppBar position="static">
       <nav className="nav">
@@ -21,12 +25,14 @@ function Nav(props) {
             <Button href="/pages/Edit">
               <div>Edit</div>
             </Button>
-
             <Button href="/pages/Register">
               <div>Register</div>
             </Button>
             <Button href="/pages/Login">
               <div>Login</div>
+            </Button>
+            <Button href="/pages/Login">
+              <div>Logout</div>
             </Button>
           </ButtonGroup>
         </Toolbar>
