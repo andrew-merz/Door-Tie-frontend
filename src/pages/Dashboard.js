@@ -18,6 +18,7 @@ const Dashboard = () => {
     const data = await req.json();
     if (data.status === "ok") {
       setStatus(data.status);
+      console.log(data.status);
     } else {
       alert(data.error);
     }
