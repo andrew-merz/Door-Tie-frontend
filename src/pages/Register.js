@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from "react";
 import Nav from "../components/Nav";
 import { useNavigate } from "react-router-dom";
+import { TextField, Stack } from "@mui/material";
 
 function Register() {
   const navigate = useNavigate();
@@ -34,25 +35,31 @@ function Register() {
       <Nav />
       <h1>Register</h1>
       <form onSubmit={registerUser}>
-        <input
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          type="text"
-          placeholder="username"
-        />
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          type="password"
-          placeholder="password"
-        />
-        <input type="submit" value="Register" />
+        <Stack spacing={2}>
+          <TextField
+            label="Username"
+            variant="outlined"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            type="text"
+          />
+          <TextField
+            label="Email"
+            variant="outlined"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+          />
+          <TextField
+            label="Password"
+            variant="outlined"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+          />
+
+          <input type="submit" value="Register" />
+        </Stack>
       </form>
     </div>
   );

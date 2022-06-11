@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import Nav from "../components/Nav";
-//import { TextField } from "@mui/material";
+import { TextField, Stack } from "@mui/material";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -38,13 +38,17 @@ function Login() {
       <Nav />
       <h1>Login</h1>
       <form onSubmit={loginUser}>
-        <input
+        <TextField
+          label="Email"
+          variant="outlined"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="email"
         />
-        <input
+        <TextField
+          label="Password"
+          variant="outlined"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
