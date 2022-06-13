@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+//import App from "./App";
 import Roommates from "./pages/Roommates";
 import Edit from "./pages/Edit";
 import Register from "./pages/Register";
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <Routes>
-      <Route path="/" element={<App />}></Route>
+      <Route path="/" element={<Login />}></Route>
       <Route path="/pages/Roommates" element={<Roommates />}></Route>
       <Route path="/pages/Edit" element={<Edit />}></Route>
       <Route path="/pages/Register" element={<Register />}></Route>

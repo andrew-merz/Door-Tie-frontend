@@ -1,0 +1,18 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(71, 123, 228);
+  height: 500px;
+  margin: 50px 300px 100px 300px;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 2px 2px black;
+}
+.status-bar {
+  background-color: whitesmoke;
+  margin: auto;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 2px 2px black;
+}

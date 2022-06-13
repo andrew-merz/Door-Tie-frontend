@@ -3,6 +3,8 @@ import React from "react";
 import Nav from "../components/Nav";
 import { useNavigate } from "react-router-dom";
 import { TextField, Stack } from "@mui/material";
+//import Button from "@mui/material/Button";
+import "../auth.css";
 
 function Register() {
   const navigate = useNavigate();
@@ -34,32 +36,35 @@ function Register() {
     <div>
       <Nav />
       <h1>Register</h1>
-      <form onSubmit={registerUser}>
-        <Stack spacing={2}>
-          <TextField
-            label="Username"
-            variant="outlined"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            type="text"
-          />
-          <TextField
-            label="Email"
-            variant="outlined"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-          />
-          <TextField
-            label="Password"
-            variant="outlined"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-          />
 
-          <input type="submit" value="Register" />
-        </Stack>
+      <form onSubmit={registerUser}>
+        <div className="register">
+          <Stack spacing={2}>
+            <TextField
+              label="Username"
+              variant="outlined"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              type="text"
+            />
+            <TextField
+              label="Email"
+              variant="outlined"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+            />
+            <TextField
+              label="Password"
+              variant="outlined"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+            />
+
+            <input type="submit" value="Register" />
+          </Stack>
+        </div>
       </form>
     </div>
   );
