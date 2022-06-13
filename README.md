@@ -1,70 +1,43 @@
-# Door tie
+# Door-Tie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Having a roommate can be awkward. So I created an app called door-tie aimed at cutting down on some of the awkwardness between roommates. Door-Tie is aimed at students, particularly college roommates. This is a shared status checker app where users can check whether or not their roommates are home, and their particular status.
+The purpose of this app is to remove the need to text or call your roommate for everything, instead you can just check their status. 
 
-## Available Scripts
+## Screenshots:
+![Screen Shot 2022-06-13 at 8 32 29 AM](https://user-images.githubusercontent.com/100104797/173354308-5eb95b90-08f9-4337-bec5-ff7969f3bece.png)
 
-In the project directory, you can run:
+![Screen Shot 2022-06-13 at 8 32 50 AM](https://user-images.githubusercontent.com/100104797/173354375-c78c81d2-2c26-4dbe-9f91-0285ef6a8146.png)
 
-### `npm start`
+![Screen Shot 2022-06-13 at 8 33 11 AM](https://user-images.githubusercontent.com/100104797/173354446-47aa5e04-bf0a-44e7-ad44-910e21b4ec4c.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screen Shot 2022-06-13 at 8 34 07 AM](https://user-images.githubusercontent.com/100104797/173354622-e632b3ed-a16a-4bd2-a1dd-bc7f7e3997ed.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies Used:
 
-### `npm test`
+Mongoose | MongoDB | Express | ReactJS | NodeJS | CSS | Material UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Getting Started:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on this link to launch the application: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. You will be prompted to log in with your account
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - If you dont have an account, click register to create an account with an email, username, and password
+ - your email will be safely stored in a database and your password will be encrypted
+  
+2.  Once you are logged in you will see the main room feed with all of the other roommates status'
 
-### `npm run eject`
+3.  Users can set or change their status at any time by typing in the 'change location' text box.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4.  User can edit their Room name, room members, and pofile information in on the edit page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5.  Users can view all the roommates in their room on the roommates page as well as any information that the roommates have provided about themselves such as email, phone number, birthday, etc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Next Steps / Icbox items
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- implememnt socket.io to update status' in real-time
+- create a shared to-do list for roommates
+- Allow rooms to follow other rooms and view a 'room status' such as "open to visitors"
